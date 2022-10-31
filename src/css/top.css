@@ -1,0 +1,409 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: Regular;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: 0.5em;
+  border: 0.0625rem solid #000;
+}
+
+table th {
+  font-weight: bold;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body * {
+  max-height: 99999em;
+  word-break: break-word;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  height: auto;
+}
+
+input,
+label,
+select,
+button {
+  line-height: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  word-break: normal;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+textarea {
+  overflow: auto;
+  white-space: pre-line;
+  resize: none;
+  line-height: 1.5;
+}
+
+.wrapper {
+  min-width: 1260px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  padding-left: 28px;
+}
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+.header .nav .menu {
+  display: flex;
+}
+.header .nav .menu .menu-item {
+  padding-right: 60px;
+  text-align: center;
+}
+.header .nav .menu .menu-item p {
+  font-size: 12px;
+}
+.header .nav .menu .menu-item strong {
+  font-size: 20px;
+}
+.header .nav .email {
+  justify-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  background-color: #c83535;
+}
+.header .nav .email img {
+  padding-top: 20px;
+}
+.header .nav .email p {
+  font-size: 14px;
+  color: #fff;
+}
+.header .nav .menu__toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #16316b;
+}
+.header .nav .menu__toggle p {
+  font-size: 14px;
+  color: #fff;
+}
+.header .nav .menu__toggle span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  transform: translateY(20px);
+}
+.header .nav .menu__toggle p {
+  transform: translateY(40px);
+}
+.header .nav .menu__toggle::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateY(10px);
+  transition: all 0.2s linear;
+}
+.header .nav .menu__toggle::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  transform: translateY(30px);
+  transition: all 0.2s linear;
+}
+
+.banner {
+  text-align: center;
+  background: url(../../src/img/banner/bg.png) no-repeat center;
+  background-size: cover;
+}
+.banner p {
+  font-size: 35px;
+  color: #fff;
+  line-height: 200px;
+}
+
+.note p {
+  font-size: 12px;
+}
+.note p span {
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  gap: 0 50px;
+}
+.content .table {
+  width: 815px;
+}
+.content .table span {
+  font-size: 15px;
+}
+.content .table h2 {
+  font-size: 30px;
+}
+.content .table p {
+  font-size: 16px;
+  border-top: 1px solid #000;
+}
+.content .table table th, .content .table table td {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  vertical-align: initial;
+}
+.content .table .btn {
+  text-align: center;
+}
+.content .table .btn button {
+  background: #c83535;
+  color: #fff;
+  line-height: 60px;
+  padding: 0 90px;
+}
+.content .table .btn-list {
+  display: flex;
+  justify-content: space-between;
+}
+.content .table .btn-list button {
+  color: #16316b;
+  border: 2px solid #16316b;
+  line-height: 77px;
+  padding: 0 40px;
+  border-radius: 50px;
+}
+.content .table .btn-list button:hover {
+  cursor: pointer;
+  background: #16316b;
+  color: #fff;
+}
+.content .date {
+  width: 300px;
+}
+.content .date .btn button {
+  width: 300px;
+  height: 50px;
+  background: #383838;
+  color: #fff;
+}
+.content .date .btn-list button {
+  width: 300px;
+  height: 50px;
+  border: 1px solid #16316b;
+  color: #16316b;
+}
+.content .date table td {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px dotted #000;
+}
+
+.contact {
+  background: #f6f6f6;
+}
+.contact .contact__list {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact__list .list-btn {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__list .list-btn button {
+  display: flex;
+  align-items: center;
+  width: 240px;
+  height: 56px;
+  border-radius: 50px;
+}
+.contact .contact__list .list-btn button:first-child {
+  background: #12cdb5;
+}
+.contact .contact__list .list-btn button:nth-child(2) {
+  background: #ff9393;
+}
+.contact .contact__list .list-btn button:nth-child(3) {
+  background: #ffd200;
+}
+.contact .contact__list .list-btn button div {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 100%;
+  position: relative;
+}
+.contact .contact__list .list-btn button div img {
+  position: absolute;
+}
+.contact .contact__list .list-arrow {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact__list .email {
+  display: flex;
+  flex-direction: column;
+}
+
+.paper {
+  text-align: center;
+}
+
+.footer {
+  background: #383838;
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=top.css.map */
