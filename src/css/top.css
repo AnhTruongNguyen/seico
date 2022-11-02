@@ -173,12 +173,12 @@ textarea {
 }
 
 .container {
-  width: 1200px;
+  width: 1197px;
   margin: 0 auto;
 }
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Yu Gothic", sans-serif;
 }
 
 .header {
@@ -188,7 +188,8 @@ body {
   align-items: center;
 }
 .header .logo {
-  padding-left: 28px;
+  padding-left: 32px;
+  margin-top: -8px;
 }
 .header .nav {
   display: flex;
@@ -196,9 +197,10 @@ body {
 }
 .header .nav .menu {
   display: flex;
+  gap: 0 62px;
+  padding-right: 62px;
 }
 .header .nav .menu .menu-item {
-  padding-right: 60px;
   text-align: center;
 }
 .header .nav .menu .menu-item p {
@@ -206,6 +208,12 @@ body {
 }
 .header .nav .menu .menu-item strong {
   font-size: 20px;
+}
+.header .nav .menu .menu-item:nth-child(4) {
+  margin-top: 14px;
+}
+.header .nav .menu .menu-item:nth-child(5) {
+  margin-top: 14px;
 }
 .header .nav .email {
   justify-content: center;
@@ -215,9 +223,10 @@ body {
   background-color: #c83535;
 }
 .header .nav .email img {
-  padding-top: 20px;
+  padding-top: 26px;
 }
 .header .nav .email p {
+  padding-top: 14px;
   font-size: 14px;
   color: #fff;
 }
@@ -238,10 +247,10 @@ body {
   width: 30px;
   height: 3px;
   background-color: #fff;
-  transform: translateY(20px);
+  transform: translateY(37px);
 }
 .header .nav .menu__toggle p {
-  transform: translateY(40px);
+  transform: translateY(60px);
 }
 .header .nav .menu__toggle::before {
   content: "";
@@ -249,7 +258,7 @@ body {
   height: 3px;
   background-color: #fff;
   position: absolute;
-  transform: translateY(10px);
+  transform: translateY(27px);
   transition: all 0.2s linear;
 }
 .header .nav .menu__toggle::after {
@@ -258,10 +267,16 @@ body {
   height: 3px;
   background-color: #fff;
   position: absolute;
-  transform: translateY(30px);
+  transform: translateY(46px);
   transition: all 0.2s linear;
 }
 
+@media screen and (max-width: 1450.02px) {
+  .header .nav .menu {
+    gap: 0 30px;
+    padding-right: 30px;
+  }
+}
 .banner {
   text-align: center;
   background: url(../../src/img/banner/bg.png) no-repeat center;
@@ -275,6 +290,7 @@ body {
 
 .note p {
   font-size: 12px;
+  padding-top: 24px;
 }
 .note p span {
   text-decoration: underline;
@@ -282,45 +298,82 @@ body {
 
 .content {
   display: flex;
-  gap: 0 50px;
+  gap: 0 97px;
 }
 .content .table {
-  width: 815px;
+  width: 800px;
+  padding-top: 98px;
 }
 .content .table span {
   font-size: 15px;
 }
 .content .table h2 {
+  padding-top: 8px;
   font-size: 30px;
+  padding-bottom: 24px;
 }
 .content .table p {
+  letter-spacing: 0.2px;
+  line-height: 1.9;
+  padding-top: 52px;
   font-size: 16px;
   border-top: 1px solid #000;
 }
-.content .table table th, .content .table table td {
+.content .table table {
+  margin-top: 70px;
+}
+.content .table table tr {
+  line-height: 2.7;
+}
+.content .table table tr th, .content .table table tr td {
   border-top: none;
   border-left: none;
   border-right: none;
   vertical-align: initial;
 }
+.content .table table tr th li, .content .table table tr td li {
+  line-height: 1.9;
+}
+.content .table table tr th {
+  padding-left: 28px;
+}
+.content .table table tr td {
+  padding-left: 40px;
+}
+.content .table table tr:nth-child(4) {
+  line-height: 3;
+}
+.content .table table tr:last-child td {
+  padding-bottom: 16px;
+  letter-spacing: 0.8px;
+}
+.content .table table tr:last-child td:last-child {
+  line-height: 1.9;
+}
 .content .table .btn {
   text-align: center;
+  padding-top: 37px;
+  margin-left: 2px;
 }
 .content .table .btn button {
   background: #c83535;
   color: #fff;
   line-height: 60px;
-  padding: 0 90px;
+  padding: 0 94px;
+  letter-spacing: 2px;
 }
 .content .table .btn-list {
   display: flex;
   justify-content: space-between;
+  padding-top: 148px;
 }
 .content .table .btn-list button {
+  font-size: 20px;
   color: #16316b;
   border: 2px solid #16316b;
   line-height: 77px;
-  padding: 0 40px;
+  padding-left: 24px;
+  padding-right: 64px;
   border-radius: 50px;
 }
 .content .table .btn-list button:hover {
@@ -328,40 +381,75 @@ body {
   background: #16316b;
   color: #fff;
 }
+.content .table .btn-list button img {
+  padding-right: 22px;
+}
+.content .table .btn-list button:nth-child(2) {
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.content .table .btn-list button:nth-child(3) {
+  padding-right: 0;
+  padding-left: 64px;
+}
+.content .table .btn-list button:nth-child(3) img {
+  padding-left: 22px;
+}
 .content .date {
+  padding-top: 160px;
   width: 300px;
 }
 .content .date .btn button {
+  font-size: 20px;
   width: 300px;
   height: 50px;
   background: #383838;
   color: #fff;
 }
+.content .date .btn-list {
+  padding-top: 16px;
+}
 .content .date .btn-list button {
-  width: 300px;
-  height: 50px;
+  margin-bottom: 12px;
+  width: 299px;
+  height: 58px;
   border: 1px solid #16316b;
   color: #16316b;
 }
-.content .date table td {
+.content .date table tr td {
+  padding: 17px 0;
+  line-height: 1.7;
+  padding-left: 20px;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px dotted #000;
 }
+.content .date table tr td span {
+  font-size: 14px;
+}
+.content .date table tr td p {
+  font-size: 18px;
+}
 
 .contact {
   background: #f6f6f6;
+  margin-top: 81px;
 }
 .contact .contact__list {
+  padding-top: 78px;
+  padding-bottom: 72px;
   display: flex;
-  justify-content: space-between;
+  gap: 0 100px;
 }
 .contact .contact__list .list-btn {
   display: flex;
   flex-direction: column;
+  gap: 10px 0;
 }
 .contact .contact__list .list-btn button {
+  gap: 0 10px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   width: 240px;
@@ -378,6 +466,8 @@ body {
   background: #ffd200;
 }
 .contact .contact__list .list-btn button div {
+  overflow: hidden;
+  margin-left: 5px;
   width: 45px;
   height: 45px;
   background: #fff;
@@ -387,23 +477,80 @@ body {
 .contact .contact__list .list-btn button div img {
   position: absolute;
 }
+.contact .contact__list .list-btn button:first-child img {
+  left: 5px;
+  top: 4px;
+}
+.contact .contact__list .list-btn button:nth-child(2) img {
+  left: -1px;
+  top: 7px;
+}
+.contact .contact__list .list-btn button:last-child img {
+  left: -1px;
+  top: 13px;
+}
 .contact .contact__list .list-arrow {
+  padding-left: 11px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
+}
+.contact .contact__list .list-arrow h3 {
+  font-size: 18px;
+  padding-bottom: 27px;
+}
+.contact .contact__list .list-arrow a {
+  margin-left: 3px;
+  font-size: 14px;
+  padding-bottom: 18px;
+}
+.contact .contact__list .list-arrow a img {
+  padding-right: 10px;
+}
+.contact .contact__list .list-content {
+  margin-top: 10px;
+  padding-left: 35px;
+}
+.contact .contact__list .list-content h3 {
+  font-size: 18px;
+  padding-bottom: 19px;
 }
 .contact .contact__list .email {
   display: flex;
   flex-direction: column;
+  padding-left: 6px;
+  position: relative;
+}
+.contact .contact__list .email button {
+  color: #fff;
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+  background: #c83535;
+}
+.contact .contact__list .email button img {
+  margin-left: -9px;
+  padding-right: 17px;
+}
+.contact .contact__list .email a {
+  position: absolute;
+  bottom: 14px;
+  right: 0;
 }
 
 .paper {
   text-align: center;
+  font-size: 12px;
+  line-height: 3.7;
 }
 
 .footer {
   background: #383838;
   color: #fff;
   text-align: center;
+  font-size: 12px;
+  line-height: 3.3;
+  padding-top: 5px;
 }
 
 /*# sourceMappingURL=top.css.map */

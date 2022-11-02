@@ -1,12 +1,18 @@
 .contact
     background: #f6f6f6
+    margin-top: 81px
     .contact__list
+        padding-top: 78px
+        padding-bottom: 72px
         display: flex
-        justify-content: space-between
+        gap: 0 100px
         .list-btn
             display: flex
             flex-direction: column
-            button
+            gap: 10px 0
+            button  
+                gap: 0 10px
+                font-size: 20px          
                 display: flex
                 align-items: center
                 width: 240px
@@ -19,16 +25,62 @@
                 &:nth-child(3)
                     background: #ffd200
                 div
+                    overflow: hidden
+                    margin-left: 5px
                     width: 45px
                     height: 45px
                     background: #fff
                     border-radius: 100%
                     position: relative
                     img
-                        position: absolute       
+                        position: absolute
+                &:first-child
+                    img
+                        left: 5px
+                        top: 4px
+                &:nth-child(2)                 
+                    img
+                        left: -1px
+                        top: 7px 
+                &:last-child             
+                    img
+                        left: -1px
+                        top: 13px 
         .list-arrow
+            padding-left: 11px
+            margin-top: 10px
             display: flex
             flex-direction: column
+            h3
+                font-size: 18px
+                padding-bottom: 27px
+            a
+                margin-left: 3px
+                font-size: 14px
+                padding-bottom: 18px
+                img
+                    padding-right: 10px
+        .list-content
+            margin-top: 10px
+            padding-left: 35px
+            h3
+                font-size: 18px
+                padding-bottom: 19px
         .email
             display: flex
             flex-direction: column
+            padding-left: 6px
+            position: relative
+            button
+                color: #fff
+                font-size: 20px
+                width: 250px
+                height: 60px
+                background: #c83535
+                img
+                    margin-left: -9px
+                    padding-right: 17px
+            a
+                position: absolute
+                bottom: 14px
+                right: 0
