@@ -185,6 +185,14 @@ body {
   font-family: "Yu Gothic", sans-serif;
 }
 
+@media screen and (max-width: 800.02px) {
+  .wrapper {
+    min-width: 800px;
+  }
+  .container {
+    width: 720px;
+  }
+}
 .header {
   height: 100px;
   display: flex;
@@ -281,6 +289,51 @@ body {
     padding-right: 30px;
   }
 }
+@media screen and (max-width: 800.02px) {
+  .header {
+    height: 120px;
+  }
+  .header .nav .menu {
+    display: none;
+  }
+  .header .nav .email {
+    width: 120px;
+    height: 120px;
+  }
+  .header .nav .email p {
+    font-size: 20px;
+  }
+  .header .nav .email img {
+    width: 35%;
+    padding-top: 30px;
+  }
+  .header .nav .menu__toggle {
+    width: 120px;
+    height: 120px;
+  }
+  .header .nav .menu__toggle p {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .header .nav .menu__toggle span {
+    width: 35px;
+    transform: translateY(45px);
+  }
+  .header .nav .menu__toggle::before {
+    width: 35px;
+    transform: translateY(34px);
+  }
+  .header .nav .menu__toggle::after {
+    width: 35px;
+    transform: translateY(56px);
+  }
+  .header .logo {
+    margin-top: -13px;
+  }
+  .header .logo img {
+    width: 127%;
+  }
+}
 .banner {
   text-align: center;
   background: url(../../src/img/banner/bg.png) no-repeat center;
@@ -292,6 +345,11 @@ body {
   line-height: 200px;
 }
 
+@media screen and (max-width: 800.02px) {
+  .banner p {
+    font-size: 40px;
+  }
+}
 .note p {
   font-size: 12px;
   padding-top: 24px;
@@ -300,6 +358,13 @@ body {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 800.02px) {
+  .note p {
+    font-size: 20px;
+    padding-left: 11px;
+    padding-top: 37px;
+  }
+}
 .content {
   display: flex;
   gap: 0 97px;
@@ -436,6 +501,70 @@ body {
   font-size: 18px;
 }
 
+@media screen and (max-width: 800.02px) {
+  .content .table {
+    padding-top: 86px;
+  }
+  .content .table span {
+    font-size: 24px;
+    padding-left: 11px;
+  }
+  .content .table h2 {
+    padding-top: 16px;
+    padding-left: 6px;
+    letter-spacing: 2px;
+    font-size: 40px;
+  }
+  .content .table p {
+    padding-right: 11px;
+    padding-left: 11px;
+    font-size: 28px;
+    line-height: 1.86;
+  }
+  .content .table table {
+    margin-top: 102px;
+    font-size: 28px;
+  }
+  .content .table table tr {
+    display: flex;
+    flex-direction: column;
+  }
+  .content .table table tr th {
+    padding-top: 10px;
+    border-bottom: none;
+  }
+  .content .table table tr td {
+    padding-left: 30px;
+    margin-top: -40px;
+  }
+  .content .table table tr:nth-child(3) td {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 42px;
+  }
+  .content .table table tr:nth-child(3) td li {
+    line-height: 1.8;
+  }
+  .content .table table tr:nth-child(4) td {
+    margin-top: -33px;
+    line-height: 1.8;
+    padding-bottom: 41px;
+  }
+  .content .table table tr:nth-child(6) td {
+    margin-top: -47px;
+  }
+  .content .table table tr:last-child td {
+    margin-top: -31px;
+    letter-spacing: 0.3px;
+    padding-bottom: 36px;
+  }
+  .content .table table tr:last-child td:last-child {
+    line-height: 1.8;
+  }
+  .content .date {
+    display: none;
+  }
+}
 .contact {
   background: #f6f6f6;
   margin-top: 81px;
@@ -542,6 +671,17 @@ body {
   right: 0;
 }
 
+@media screen and (max-width: 800.02px) {
+  .contact .contact__list .list-btn {
+    display: none;
+  }
+  .contact .contact__list .list-arrow {
+    display: none;
+  }
+  .contact .contact__list .list-content {
+    display: none;
+  }
+}
 .paper {
   text-align: center;
   font-size: 12px;
