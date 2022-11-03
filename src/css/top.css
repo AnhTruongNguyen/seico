@@ -501,7 +501,7 @@ body {
   font-size: 18px;
 }
 
-@media screen and (max-width: 800.02px) {
+@media only screen and (max-width: 800.02px) {
   .content .table {
     padding-top: 86px;
   }
@@ -560,6 +560,41 @@ body {
   }
   .content .table table tr:last-child td:last-child {
     line-height: 1.8;
+  }
+  .content .table .btn button {
+    font-size: 30px;
+    width: 640px;
+    height: 100px;
+  }
+  .content .table .btn-list {
+    flex-wrap: wrap;
+    padding: 116px 10px 0;
+  }
+  .content .table .btn-list button {
+    font-size: 24px;
+  }
+  .content .table .btn-list button:first-child {
+    width: 345px;
+  }
+  .content .table .btn-list button:first-child img {
+    width: 26%;
+    padding-right: 49px;
+    margin-left: -27px;
+  }
+  .content .table .btn-list button:last-child {
+    width: 345px;
+    position: relative;
+    top: -183px;
+    right: -355px;
+  }
+  .content .table .btn-list button:last-child img {
+    width: 33%;
+    padding-left: 55px;
+    margin-right: -33px;
+  }
+  .content .table .btn-list button:nth-child(2) {
+    margin-top: 21px;
+    width: 700px;
   }
   .content .date {
     display: none;
@@ -671,7 +706,11 @@ body {
   right: 0;
 }
 
-@media screen and (max-width: 800.02px) {
+@media only screen and (max-width: 800.02px) {
+  .contact .contact__list {
+    padding-top: 47px;
+    padding-bottom: 131px;
+  }
   .contact .contact__list .list-btn {
     display: none;
   }
@@ -681,13 +720,46 @@ body {
   .contact .contact__list .list-content {
     display: none;
   }
+  .contact .contact__list .email {
+    padding-left: 10px;
+  }
+  .contact .contact__list .email button {
+    font-size: 30px;
+    width: 700px;
+    height: 100px;
+  }
+  .contact .contact__list .email button img {
+    width: 12%;
+    margin-left: 0;
+  }
+  .contact .contact__list .email a {
+    bottom: -100px;
+    right: 344px;
+  }
+  .contact .contact__list .email a img {
+    width: 170%;
+  }
 }
 .paper {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   font-size: 12px;
   line-height: 3.7;
 }
 
+@media only screen and (max-width: 800.02px) {
+  .paper {
+    flex-direction: column;
+    padding-top: 33px;
+    font-size: 24px;
+    line-height: normal;
+    text-align: start;
+    padding-left: 124px;
+    line-height: 1.71;
+    letter-spacing: 0.2px;
+    padding-bottom: 28px;
+  }
+}
 .footer {
   background: #383838;
   color: #fff;
@@ -695,6 +767,14 @@ body {
   font-size: 12px;
   line-height: 3.3;
   padding-top: 5px;
+}
+
+@media only screen and (max-width: 800.02px) {
+  .footer {
+    font-size: 20px;
+    padding-bottom: 9px;
+    letter-spacing: 0.2px;
+  }
 }
 
 /*# sourceMappingURL=top.css.map */
