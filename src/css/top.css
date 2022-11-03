@@ -370,7 +370,6 @@ body {
   gap: 0 97px;
 }
 .content .table {
-  width: 800px;
   padding-top: 98px;
 }
 .content .table span {
@@ -466,7 +465,6 @@ body {
 }
 .content .date {
   padding-top: 160px;
-  width: 300px;
 }
 .content .date .btn button {
   font-size: 20px;
