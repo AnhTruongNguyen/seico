@@ -54,12 +54,14 @@
 
 
 @media screen and (max-width: 1450.02px)
-    .menu
-        gap: 0 30px
-        padding-right: 30px
+    .nav
+        width: 1022px
+        .menu
+            gap: 0 30px
+            padding-right: 30px
+
 +mobile
     .menu
-        display: none
         visibility: visible
         opacity: 1
         z-index: 2
@@ -116,7 +118,6 @@
         transform: rotate(-45deg)
         transition: all 0.2s linear
         background: #000
-
     .menu__toggle.open>span
         display: none
                     
