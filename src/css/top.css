@@ -320,16 +320,14 @@ body {
 }
 
 @media screen and (max-width: 1450.02px) {
-  .nav {
-    width: 1022px;
-  }
-  .nav .menu {
+  .menu {
     gap: 0 30px;
     padding-right: 30px;
   }
 }
 @media only screen and (max-width: 800.02px) {
   .menu {
+    display: none;
     visibility: visible;
     opacity: 1;
     z-index: 2;
