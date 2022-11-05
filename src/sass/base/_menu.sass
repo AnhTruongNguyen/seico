@@ -14,14 +14,13 @@
             margin-top: 14px
 
 .menu__toggle
-    margin-top: -34px
     display: flex
     align-items: center
     flex-direction: column
     justify-content: center
     position: relative
     width: 100px
-    height: 130px
+    height: 100px
     background-color: $mainColor
     p
         font-size: 14px
@@ -30,9 +29,10 @@
         width: 30px
         height: 3px
         background-color: #fff
-        transform: translateY(16px)
+        transform: translateY(-1px)
+        z-index: 3
     p
-        transform: translateY(37px)
+        transform: translateY(22px)
 .menu__toggle::before 
     z-index: 3
     content: ""
@@ -40,7 +40,7 @@
     height: 3px
     background-color: #fff
     position: absolute
-    transform: translateY(-4px)
+    transform: translateY(-22px)
     transition: all 0.2s linear
 .menu__toggle::after 
     z-index: 3
@@ -49,7 +49,7 @@
     height: 3px
     background-color: #fff
     position: absolute
-    transform: translateY(14px)
+    transform: translateY(-3px)
     transition: all 0.2s linear
 
 
@@ -95,28 +95,30 @@
             display: flex      
     .menu__toggle
         width: 120px
-        height: 153px
+        height: 120px
         p
             padding-top: 10px
             font-size: 20px
-            transform: translateY(39px)
+            transform: translateY(22px)
         span
             width: 35px
-            transform: translateY(23px)
+            transform: translateY(6px)
     .menu__toggle::before
         width: 35px
-        transform: translateY(-9px)
+        transform: translateY(-26px)
     .menu__toggle::after
         width: 35px
-        transform: translateY(13px)
+        transform: translateY(-4px)
     .menu__toggle.open::before 
         transform: rotate(45deg)
         transition: all 0.2s linear
         background: #000
+        top: 45px
     .menu__toggle.open::after 
         transform: rotate(-45deg)
         transition: all 0.2s linear
         background: #000
+        top: 45px
     .menu__toggle.open>span
         display: none
                     
