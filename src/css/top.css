@@ -664,6 +664,7 @@ body {
     margin-left: -27px;
   }
   .content .table .btn-list button:last-child {
+    z-index: -1;
     width: 345px;
     position: relative;
     top: -183px;
@@ -685,6 +686,8 @@ body {
 .contact {
   background: #f6f6f6;
   margin-top: 81px;
+  z-index: -2;
+  position: relative;
 }
 .contact .contact__list {
   padding-top: 78px;
@@ -769,6 +772,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 6px;
+  z-index: -1;
   position: relative;
 }
 .contact .contact__list .email button {
